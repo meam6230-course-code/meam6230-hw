@@ -1,2 +1,16 @@
+# ignore ALL .o files compiled in lightspeed library
 .DS_Store
-**/.DS_Store
+hw1/.DS_Store
+hw2/.DS_Store
+hw2/penm_log.txt
+ControlFlag.txt
+
+# ignore ALL .o files compiled in lightspeed library
+libraries/book-thirdparty/lightspeed/*.o
+
+# ignore ALL .o files compiled in lightspeed and libsvm libraries
+libraries/book-thirdparty/lightspeed/*.mexmaci64
+libraries/book-thirdparty/lightspeed/@double/*.mexmaci64
+libraries/book-ml-toolbox/methods/toolboxes/libsvm/matlab/*.mexmaci64
+hw2/gui_data.mat
+hw2/part3/ds_control.mat

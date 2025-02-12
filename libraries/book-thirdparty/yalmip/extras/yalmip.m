@@ -487,7 +487,8 @@ switch varargin{1}
                 else
                     z = [];
                 end
-                for i = 1:nout
+                
+                for i = 1:nout(1)
                     % Avoid subsref to save time
                     if nout == 1
                         yi = y;

@@ -20,7 +20,7 @@ end
 vals = zeros(size(X_));
 
 for i = 1:length(xplot)
-    for j = 1:size(yplot)
+    for j = 1:size(yplot,1)
         x = [xplot(i);yplot(j)];
         vals(j,i) =  ml_gmm_pdf(x, Priors, Mu, Sigma);
     end

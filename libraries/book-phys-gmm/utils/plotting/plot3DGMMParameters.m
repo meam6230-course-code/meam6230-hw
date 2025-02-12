@@ -24,8 +24,8 @@ function [hf] = plot3DGMMParameters(Xi_ref, GMM, labels)
     end            
 
     grid on;
-    xlabel('$\xi_1$', 'Interpreter', 'LaTex', 'FontSize',15);
-    ylabel('$\xi_2$', 'Interpreter', 'LaTex','FontSize',15);
-    zlabel('$\xi_3$', 'Interpreter', 'LaTex','FontSize',15);
+    xlabel('$x_1$', 'Interpreter', 'LaTex', 'FontSize',15);
+    ylabel('$x_2$', 'Interpreter', 'LaTex','FontSize',15);
+    zlabel('$x_3$', 'Interpreter', 'LaTex','FontSize',15);
     set(gca,'FontSize',16);
 end

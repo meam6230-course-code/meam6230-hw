@@ -307,7 +307,7 @@ switch mode
             %sp.fig.Position = [0.5  * screensize(3), 0.1  * screensize(4), 0.7 * screensize(3), 0.8 * screensize(4)];
             sp.axis = gca;
             hold on
-            sp.xT = plot(xT(1),xT(2),'k*','EraseMode','none','markersize',10,'linewidth',1.5);
+%             sp.xT = plot(xT(1),xT(2),'k*','EraseMode','none','markersize',10,'linewidth',1.5);
             sp.xT_l = plot(xT(1),xT(2),'k--','EraseMode','none','linewidth',1.5);
             for j=1:nbSPoint
                 plot(x(1,1,j),x(2,1,j),'ok','markersize',2,'linewidth',7.5)
@@ -330,7 +330,7 @@ switch mode
             %sp.fig.Position = [0.5  * screensize(3), 0.1  * screensize(4), 0.7 * screensize(3), 0.8 * screensize(4)];
             sp.axis = gca;
             hold on
-            sp.xT = plot3(xT(1),xT(2),xT(3),'k*','EraseMode','none','markersize',10,'linewidth',1.5);
+%             sp.xT = plot3(xT(1),xT(2),xT(3),'k*','EraseMode','none','markersize',10,'linewidth',1.5);
             sp.xT_l = plot3(xT(1),xT(2),xT(3),'k--','EraseMode','none','linewidth',1.5);
             for j=1:nbSPoint
                 plot3(x(1,1,j),x(2,1,j),x(3,1,j),'ok','markersize',2,'linewidth',7.5)
@@ -346,9 +346,9 @@ switch mode
                     set(sp.obs(n),'FaceColor',[0.6 1 0.6],'linewidth',0.1)
                 end
             end
-            xlabel('$\xi_1$','interpreter','latex','fontsize',16);
-            ylabel('$\xi_2$','interpreter','latex','fontsize',16);
-            zlabel('$\xi_3$','interpreter','latex','fontsize',16);
+            xlabel('$x_1$','interpreter','latex','fontsize',16);
+            ylabel('$x_2$','interpreter','latex','fontsize',16);
+            zlabel('$x_3$','interpreter','latex','fontsize',16);
             grid on
             view(-28,44)
         else
@@ -356,7 +356,7 @@ switch mode
             for i=2:d
                 sp.axis(i-1)=subplot(d-1,1,i-1);
                 hold on
-                sp.xT(i-1) = plot(xT(1),xT(i),'k*','EraseMode','none','markersize',10,'linewidth',1.5);
+%                 sp.xT(i-1) = plot(xT(1),xT(i),'k*','EraseMode','none','markersize',10,'linewidth',1.5);
                 sp.xT_l(i-1) = plot(xT(1),xT(i),'k--','EraseMode','none','linewidth',1.5);
                 for j=1:nbSPoint
                     plot(x(1,1,j),x(i,1,j),'ok','markersize',2,'linewidth',7.5);

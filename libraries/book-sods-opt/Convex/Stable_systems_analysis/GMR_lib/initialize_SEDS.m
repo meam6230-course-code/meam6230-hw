@@ -69,8 +69,6 @@ d = size(Data,1)/2; %number of dimensions
 
 fprintf('\nStarting initialization ...\n')
 %initializing with EM
-disp(size(Data));
-disp(size(K));
 [Priors_0, Mu_0, Sigma_0] = EM_init_kmeans(Data, K);
 [Priors_0, Mu_0, Sigma_0] = EM(Data, Priors_0, Mu_0, Sigma_0);
 

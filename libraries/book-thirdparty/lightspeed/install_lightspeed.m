@@ -174,9 +174,16 @@ else
 	eval(['mex' flags 'setnonzeros.c'])
   if ismac
     disp('Doing the mac stuff.........~+!!!!');
-    % thanks to Nicholas Butko for these mac-specific lines
+        % thanks to Nicholas Butko for these mac-specific lines
 		clear librandom.dylib randomseed randbinom randgamma sample_hist
-		cmd = [options.COMPILER{1,1} ' -c random.c; ' options.COMPILER{1,1} ' -dynamiclib -Wl,-install_name,`pwd`/librandom.dylib -o librandom.dylib random.o'];
+
+        % Modification by Nadia Figueroa Feb 2025 
+        try
+            compiler_info = options.COMPILER{1,1};
+        catch
+            compiler_info = options.COMPILER;
+        end
+		cmd = [compiler_info ' -c random.c; ' compiler_info ' -dynamiclib -Wl,-install_name,`pwd`/librandom.dylib -o librandom.dylib random.o'];
 		disp(cmd);
 		system(cmd)
     eval(['mex' flags 'randomseed.c util.o librandom.dylib -lm'])

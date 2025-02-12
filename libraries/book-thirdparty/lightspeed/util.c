@@ -42,7 +42,7 @@ double logSum(double a, double b)
     double t = a; a = b; b = t;
   }
   /* log(exp(a) + exp(b)) = a + log(1 + exp(b-a)) */
-  if(!finite(b)) return a;
+  if(!isfinite(b)) return a;
   return a + log(1 + exp(b-a));
 }
 
@@ -228,7 +228,7 @@ double gammaln(double x)
   double denom, x1, series;
   if(x < 0) return NAN;
   if(x == 0) return INFINITY;
-  if(!finite(x)) return x;
+  if(!isfinite(x)) return x;
   /* Lanczos method */
   denom = x+1;
   x1 = x + 5.5;

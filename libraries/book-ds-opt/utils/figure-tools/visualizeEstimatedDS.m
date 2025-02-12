@@ -74,8 +74,8 @@ elseif M == 3
         axis(limits_)                
         box on
         grid on
-        xlabel('$\xi_{d_1}$','Interpreter','LaTex','FontSize',20);
-        ylabel('$\xi_{d_2}$','Interpreter','LaTex','FontSize',20);
+        xlabel('$x_{d_1}$','Interpreter','LaTex','FontSize',20);
+        ylabel('$x_{d_2}$','Interpreter','LaTex','FontSize',20);
         
         % Plot simulated trajectories
         if plot_repr
