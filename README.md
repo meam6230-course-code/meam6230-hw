@@ -4,6 +4,10 @@ Maintainers: Contact 2025 Spring semester TAs
 
 This repo is the course homework repo for MEAM6230 @ Penn.
 
+The libraries and exercises have been adapted from the Matlab code published alongside the textbook ["Learning and Control for Adaptive and Reactive Robots: A Dynamical Systems Approach"](https://mitpress.mit.edu/9780262046169/learning-for-adaptive-and-reactive-robot-control/) by Aude Billard, Sina Mirrazavi and Nadia Figueroa with MIT Press in 2022. 
+
+Original code found here: [https://github.com/learningadaptivereactiverobotcontrol/book-code](https://github.com/learningadaptivereactiverobotcontrol/book-code)
+
 ---
 
 ## Setting up MATLAB
